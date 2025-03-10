@@ -1,0 +1,188 @@
+:root {
+    --gradient: radial-gradient(rgba(60, 0, 80, 1), black);
+
+    --violet: violet;
+    --dark_violet: darkviolet;
+    --green: lightgreen;
+    --white: white;
+    --grey: grey;
+    --grey_border: grey;
+    --grey_light: lightgrey;
+    --grey_dark: darkgrey;
+    --shadow_color: rgba(0, 20, 70, 0.30);
+}
+
+body {
+    align-self: center;
+    margin: 0;
+    height: 100vh;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    width: 15%;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, darkviolet, violet);
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 3rem;
+    height: 50%;
+    width: 70%;
+    box-shadow: 0 1rem 3rem 1rem var(--shadow_color);
+    max-width: 30rem;
+}
+
+.hint {
+    height: 2rem;
+    color: var(--grey);
+    text-align: center;
+}
+
+
+h2 {
+    height: 2rem;
+    color: var(--dark_violet);
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    display: flex;
+
+}
+
+.input_field {
+    width: 65%;
+    border: 0.06rem solid var(--grey);
+    border-radius: 2rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+    color: var(--grey);
+}
+
+.todo_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0.5rem;
+}
+
+#todoList p {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    color: var(--dark_violet);
+    align-items: center;
+
+}
+
+#todoList .disabled {
+    display: flex;
+    gap: 1rem;
+    color: var(--grey);
+    align-items: center;
+}
+
+.disabled {
+    display: flex;
+    text-decoration: line-through;
+}
+
+input[type="button"] {
+    align-self: center;
+    background: white;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.1rem dashed var(--grey_border);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "\2713";
+    color: var(--grey_light);
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.06rem solid var(--grey_border);
+    border-radius: 50%;
+}
+
+
+input[type="checkbox"]:checked::before {
+    color: var(--white);
+    background-color: var(--green);
+    border: 0.06rem solid var(--green);
+    border-radius: 50%;
+}
+
+.counter {
+    border: 0.06rem solid var(--grey_light);
+}
+
+.counter_container {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color:var(--grey);
+}
+
+.counter_container p {
+    align-self: center;
+}
+
+.scroll {
+    height: 15rem;
+    scrollbar-width: thin;
+    
+}

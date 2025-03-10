@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cs when.css">
+    <script src="./code thing.js" defer></script>
+    <title>It's time to do a TO-DO list and chew bubblegum, and I'm all outta gum</title>
+  </head>
+
+  <body>
+
+    <section class="todo">
+
+        <h2>TO-DO LIST</h2>
+        <p class="hint">You can edit text by clicking on it</p>
+
+        <div class="input"> 
+            <input type="text" class="input_field" id="todo_input" placeholder="Add a new to-do. To-dos longer than 2 lines will not be displayed in this textbox."/>
+            <button class="btn">+</button>
+        </div>
+        <ul class="scroll">
+            <li id="todo_list"></li>
+        </ul>
+
+        <div>
+            
+            <hr class="counter"/>
+            <div class="counter_container">
+                <p><span id="todo_count">0</span> to-dos total. That's a lotta words. Too bad I'm not reading them.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+  </body>
+</html>
