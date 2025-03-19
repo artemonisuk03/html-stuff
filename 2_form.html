@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Приходит человек к скелету, и говорит: На тебе лица нет</title>
-  </head>
 
-  <body>
-    <section class="form">
-      <h2>ФОРМА</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./2_form.css">
+  <title>Приходит человек к скелету, и говорит: На тебе лица нет</title>
+</head>
 
-      <table>
-        <tr>
-          <td>
-            <div class="name">
-              <input type="text" placeholder="ФИО" />
-              <p>Пол</p>
+<body>
 
-              <label>
-                Муж.
-                <input type="radio" />
-              </label>
+  <div class="form">
+    <h2>ФОРМА</h2>
+    <div class="contents">
 
-              <label>
-                Жен.
-                <input type="radio" />
-              </label>
+      <section class="name">
 
-              <p></p>
-              <input type="text" placeholder="Пароль" />
-              <p></p>
-              <select>
-                <option>Страна</option>
-                <option>United Kingdom</option>
-                <option>United States</option>
-                <option>California</option>
-                <option>Mexico</option>
-              </select>
-            </div>
-          </td>
+        <input type="text" placeholder="ФИО" class="input_name" />
+        <p>Пол</p>
 
-          <td>
-            <div class="choose">
-              <p>Выберите:</p>
-              <label>
-                Яйца
-                <input type="checkbox" />
-              </label>
-              <p></p>
-              <label>
-                Хлеб
-                <input type="checkbox" />
-              </label>
-              <p></p>
-              <label>
-                Panzer Wolflenshhauzer III-v.2
-                <input type="checkbox" />
-              </label>
-              <p></p>
-              <textarea placeholder="Что вы любите? Не пишите, все равно не прочитаем"></textarea>
-            </div>
-          </td>
-        </tr>
-      </table>
+        <div class="radios">
+          <label>
+            Муж.
+            <input type="radio" />
+          </label>
+
+          <label>
+            Жен.
+            <input type="radio" />
+          </label>
+        </div>
+
+        <p></p>
+        <input type="text" placeholder="Пароль" class="input_pass" />
+        <p></p>
+        <select class="selection">
+          <option>Страна</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>California</option>
+          <option>Mexico</option>
+        </select>
+
+      </section>
+
+      <section class="choose">
+
+        <p>Выберите:</p>
+        <label>
+          <input type="checkbox" class="input_ch" />
+          Яйца
+
+        </label>
+        <p></p>
+        <label>
+          <input type="checkbox" class="input_ch" />
+          Хлеб
+
+        </label>
+        <p></p>
+        <label>
+          <input type="checkbox" class="input_ch" />
+          Panzer Wolf. III-v.2
+
+        </label>
+        <p></p>
+        <textarea placeholder="Что вы любите? Не пишите, все равно не прочитаем" class="text_area"></textarea>
+    </div>
+
     </section>
-  </body>
+
+  </div>
+
+</body>
+
 </html>

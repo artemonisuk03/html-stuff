@@ -1,0 +1,86 @@
+:root {
+
+}
+
+body {
+    background-image: url(https://wallpapercat.com/w/full/7/9/e/1394497-1365x2048-phone-hd-miami-beach-skyline-background-photo.jpg);
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 150vh;  
+    justify-content: space-evenly;
+    font-family: bahnschrift;
+    font-size: large;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: bahnschrift;
+    align-items: center;
+    align-self: center;
+    padding: 0.5rem;
+}
+
+img {
+    position: relative;
+    left: 2rem;
+    border-radius: 2rem;
+}
+
+.with_name {
+    align-self: center;
+    color: white;
+    box-shadow: 0rem 1rem 30rem 1rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;  
+    height: 40%;
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.intro {
+    font-size: xx-large;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+}
+
+.rest {
+    font-family: bahnschrift light;
+    font-size: x-large;
+    align-self: center;
+    color: white;
+    box-shadow: 0rem 1rem 30rem 1rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;  
+    height: 40%;
+    width: 80%;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text_field2 {
+    cursor: pointer;
+    font-family: bahnschrift light;
+    font-size: x-large;
+    align-self: center;
+    color: white;
+    border: 0.06rem solid white;
+    background: none;
+    padding: 2rem;  
+    border-radius: 3rem;
+}
+
+.info {
+    position: relative;
+    left: 7rem;
+    vertical-align: middle;
+}

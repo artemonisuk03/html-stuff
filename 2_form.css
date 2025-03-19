@@ -1,0 +1,85 @@
+:root {
+
+}
+
+body {
+
+    background-image: url(https://plus.unsplash.com/premium_photo-1668800128890-bc8d2bf9af7e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    font-family: bahnschrift light;
+    font-size: x-large;
+}
+
+.form {
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.1);
+    align-self: center;
+    width: 70%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+h2 {
+    left: 22%;
+    position: relative;
+}
+
+.contents {
+
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;  
+    height: 70%;
+}
+
+.name, .choose {
+
+    width: 35%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.radios {
+
+}
+
+.selection, .input_pass, .input_name, .text_area {
+    font-family: bahnschrift light;
+    font-size: large;
+    border: 0.06rem solid black;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.input_ch[type="checkbox"] {
+    background-color: white;
+    border-radius: 0.4rem;
+    border: 0.06rem solid black;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.input_ch[type="checkbox"]:checked {
+    background-color: blue;
+    border-radius: 0.4rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    position: relative;
+}
