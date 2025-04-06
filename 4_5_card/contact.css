@@ -1,0 +1,196 @@
+:root {
+    --bg: rgb(20,0,0);
+    --bright: rgb(255, 0, 40);
+    --l_bright: rgb(200, 0, 40);
+    --w_bright: rgb(200, 160, 160);
+    --width: 60%;
+    --height: 100vh;
+}
+
+body {
+    background-image: url(city_bg_3.jpg);
+    background-size: cover;
+    display: flex;
+    background-color: var(--bg);
+    flex-direction: column;
+    background-attachment: fixed;
+    height: 120vh;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(monsoon.png);
+    background-size: cover;
+    background-position: right;
+    box-shadow: 0rem 0rem 8cap 1rem rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    /* right: 17%; */
+    border-radius: 3rem;
+    height: var(--height);
+    width: var(--width);
+    align-self: center;
+    padding: 4rem;
+}
+
+@font-face {
+    font-family: 'custom_1';
+    src: url(brazil_h.otf);
+}
+
+@font-face {
+    font-family: 'custom_2';
+    src: url(freeagentcond.ttf);
+}
+
+.bright {
+    text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 2); 
+    font-size: 2rem;
+    font-family: 'custom_1';
+    color: var(--bright);
+
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 5rem;
+}
+
+.contact {
+    width: 100%;
+    align-self: center;
+    bottom: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_btn {
+    text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 2); 
+    z-index: 5;
+    color: var(--w_bright);
+    text-align: center;
+    width: 13%;
+
+    border-radius: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'custom_2';
+    border: 0.1rem solid rgba(0,0,0,0);
+    transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.link_btn:hover {
+    transform: scale(1.1);
+    border: 0.1rem solid var(--bright);
+}
+
+.info {
+    display: flex;
+    font-size: 3rem;
+    font-family: 'custom_2';
+    padding: 2.5rem;
+    border-radius: 2rem;
+    border: 0.15rem solid var(--bright);
+    width: 40%;
+    height: 100%;
+}
+
+.info2 {
+    text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 2); 
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-family: 'custom_2';
+    color: var(--w_bright);
+    text-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.memes {
+    margin-inline: 4rem;
+}
+
+.map {
+    border-radius: 2rem;
+    border: 0.15rem solid var(--bright);
+    padding: 0.5rem;
+    transition: transform 0.5s ease;
+}
+
+.map:hover {
+    transform: scale(1.5);
+}
+
+.info3 {
+    text-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 2); 
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: 'custom_2';
+    color: var(--w_bright);
+    text-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.text_field {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: none;
+    border-radius: 2rem;
+    border: 0.15rem solid var(--bright);
+    color: var(--w_bright)
+}
+
+.input_ch[type="checkbox"] {
+    background: none;
+    border-radius: 0.4rem;
+    border: 0.06rem solid var(--bright);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+.input_ch[type="checkbox"]:checked {
+    background-color: var(--bright);
+    border-radius: 0.4rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle
+}
+
+.text_field2 {
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'custom_2'; 
+    padding: 1rem;
+    background: none;
+    border-radius: 2rem;
+    border: 0.15rem solid var(--bright);
+    color: var(--w_bright);
+    transition: transform 0.2s ease;
+}
+
+.text_field2:hover {
+    transform: scale(1.1);
+}
