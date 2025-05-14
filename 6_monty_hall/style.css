@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 98.5vh;
+    text-align: center;
+    font-family: bahnschrift;
+    background: linear-gradient(lightgreen, green);
+}
+
+.page_container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    border-radius: 2rem;
+    align-self: center;
+    padding: 2rem;
+}
+
+.doors {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.door {
+    margin-inline: 2rem;
+    width: 125px;
+    height: 200px;
+    background-image: url('./door.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.door:hover {
+    transform: scale(1.05);
+}
+
+.door.opened {
+    background-image: url('./door.png');
+}
+
+.content {
+    background-repeat: no-repeat;
+    position: relative;
+    vertical-align: center;
+    right: 1rem;
+}
+
+button {
+    width: 30%;
+    align-self: center;
+    padding: 1rem 2rem;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: bahnschrift;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.message {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 2rem;
+    min-height: 60px;
+    font-size: 1.5rem;
+}
