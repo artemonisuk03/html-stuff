@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 98.5vh;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: 500;
+    background: url("./tic_tac_toe_back.png");
+}
+
+.page_container {
+    box-shadow: 0rem 0rem 8cap 1rem rgba(0, 0, 0, 0.7);
+    border: 5px solid rgb(30, 30, 50);
+    background-color: rgb(20, 20, 30);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    border-radius: 2rem;
+    align-self: center;
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+    position: relative;
+}
+
+.board {
+    margin-top: 1rem;
+    width: fit-content;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 11vh);
+    grid-template-rows: repeat(3, 11vh);
+    gap: 1vh;
+}
+
+.cell {
+    color: white;
+    width: 11vh;
+    height: 11vh;
+    border-radius: 0.5rem;
+    background-color: rgb(30, 30, 50);
+    border: 2px solid rgb(60, 60, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgb(40, 40, 65);
+}
+
+.status {
+    color:white;
+    white-space: pre;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.restart_button {
+    margin-top: 3rem;
+    font-family: "Century Gothic";
+    font-weight: 600;
+    position: relative;
+    align-self: center;
+    min-width: 20vh;
+    width: 20%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: rgb(40, 140, 60);
+    color: white;
+    border: 3px solid rgb(140, 200, 140);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(100, 140, 100);
+}
+
+.disabled {
+    pointer-events: none;
+}
