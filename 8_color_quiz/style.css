@@ -1,0 +1,198 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 98.5vh;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: 500;
+    background-color: rgb(8, 8  , 25);;
+}
+
+.page_container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 50%);
+    width: 90%;
+    height: 90%;
+    align-self: center;
+}
+
+.board {
+    margin-inline: 1rem;
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: gray;
+    border: 5px solid rgb(30, 30, 50);
+    background-color: rgb(15, 15, 35);
+}
+
+.color {
+    align-self: center;
+    width: 90%;
+    height: 70%;
+    border-radius: 2rem;
+}
+
+#color_1 {
+    background-color: #E78669;
+}
+
+#color_2 {
+    background-color: #36E76E;
+}
+
+#color_3 {
+    background-color: #A761E7;
+}
+
+#color_4 {
+    background-color: #E7676F;
+}
+
+#color_5 {
+    background-color: #76E67B;
+}
+
+#color_6 {
+    background-color: #D376E6;
+}
+
+
+
+.res {
+    white-space: pre;
+    color: rgb(15, 15, 35);
+    font-family: "Century Gothic";
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    color: white;
+    font-family: "Century Gothic";
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: rgb(30, 30, 50);
+    border: 2px solid rgb(60, 60, 100);
+    margin-inline: 1rem;
+    padding: 0.8rem;
+    width: 25%;
+    border-radius: 2rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(40, 40, 65);
+}
+
+#btn_1_1:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_1_2:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_1:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_1:target > .btns #btn_1_3 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_1:target > #res_1 {
+    color: white;
+}
+
+
+#btn_2_1:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_2_3:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_2:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_2:target > .btns #btn_2_2 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_2:target > #res_2 {
+    color: white;
+}
+
+
+#btn_3_1:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_3_2:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_3:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_3:target > .btns #btn_3_3 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_3:target > #res_3 {
+    color: white;
+}
+
+
+#btn_4_2:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_4_3:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_4:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_4:target > .btns #btn_4_1 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_4:target > #res_4 {
+    color: white;
+}
+
+
+#btn_5_2:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_5_3:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_5:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_5:target > .btns #btn_5_1 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_5:target > #res_5 {
+    color: white;
+}
+
+
+#btn_6_1:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#btn_6_3:target {
+    border: 2px solid rgb(200, 90, 90);
+}
+#board_6:target {
+    border: 5px solid rgb(140, 200, 140);
+}
+#board_6:target > .btns #btn_6_2 {
+    border: 2px solid rgb(140, 200, 140);
+}
+#board_6:target > #res_6 {
+    color: white;
+}
